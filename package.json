@@ -1,0 +1,19 @@
+{
+  "name": "using-apis-qa-wk1",
+  "version": "1.0.0",
+  "description": "This repo contains the material prepared for the Using APIs Q&A week 1.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.27.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
