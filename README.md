@@ -50,4 +50,3 @@ See: <https://github.com/HackYourFuture/UsingAPIs/tree/main/Week3>
 Please note:
 
 > The app needs to have loading/error handling for the interaction with the API and needs to show this to the user, not just a console.log.
-

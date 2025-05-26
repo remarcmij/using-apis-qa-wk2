@@ -9,3 +9,9 @@ async function bar() {
 }
 
 bar();
+
+/* 
+What will be the output of the above code?
+
+Answer: ...
+*/

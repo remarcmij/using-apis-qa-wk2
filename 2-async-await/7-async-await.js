@@ -1,6 +1,5 @@
 async function foo() {
   throw new Error('Oops, something went wrong...');
-  // return Promise.reject(new Error('Oops, something went wrong...'));
 }
 
 async function bar() {
@@ -13,3 +12,9 @@ async function bar() {
 }
 
 bar();
+
+/* 
+What will be the output of the above code?
+
+Answer: ...
+*/

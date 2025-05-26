@@ -1,4 +1,6 @@
-import { baz } from './lib/baz.js';
+function baz() {
+  throw new Error('baz error');
+}
 
 function foo() {
   return new Promise((resolve, reject) => {
@@ -17,3 +19,9 @@ async function bar() {
 }
 
 bar();
+
+/* 
+What will be the output of the above code?
+
+Answer: ...
+*/

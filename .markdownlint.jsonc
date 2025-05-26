@@ -1,0 +1,7 @@
+{
+  "MD013": false,
+  "MD033": false
+}
+// This configuration file disables the following markdownlint rules:
+// - MD013: Disables the rule that enforces a maximum line length.
+// - MD033: Disables the rule that requires inline HTML to be properly formatted.
