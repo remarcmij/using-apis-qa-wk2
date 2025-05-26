@@ -27,19 +27,3 @@ function main() {
 }
 
 main();
-
-/*
-Order of execution
-
-All .then():
-- microtask#1
-- microtask#4: This is a double digit number!
-- microtask#7: This is a double digit number!
-- microtask#10
-
-All .catch():
-- microtask#2: Expected a double digit number but got 9
-- microtask#5
-- microtask#8
-- microtask#11: Expected a double digit number but got 100
-*/

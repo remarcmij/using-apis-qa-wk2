@@ -42,8 +42,6 @@ function main() {
       // promise#8
 
     );
-    /* no microtask#8 */
-
 }
 
 if (process.env.NODE_ENV !== 'test') {
@@ -53,7 +51,7 @@ if (process.env.NODE_ENV !== 'test') {
 /*
 Order of execution
 
-All .then():
+4 microtasks in total, one for each .then():
 - microtask#1: Expected a double digit number but got 9
 - microtask#3: This is a double digit number!
 - microtask#5: This is a double digit number!
