@@ -8,6 +8,7 @@ export function checkDoubleDigits(number) {
     }
   });
 }
+
 function main() {
   checkDoubleDigits(9)
     .then((message) => console.log(message))
@@ -27,3 +28,18 @@ function main() {
 }
 
 main();
+
+/* 
+Questions:
+
+1. What will be the output of the code if you run it?
+2. How many promises are created during execution?
+3. How many microtasks are created during execution?
+
+Answers:
+
+1. ...
+2. ...
+3. ...
+
+*/

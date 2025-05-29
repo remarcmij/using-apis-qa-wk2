@@ -40,7 +40,6 @@ function main() {
       (message) => console.log(message),
       (error) => console.log(error.message)
       // promise#8
-
     );
 }
 
