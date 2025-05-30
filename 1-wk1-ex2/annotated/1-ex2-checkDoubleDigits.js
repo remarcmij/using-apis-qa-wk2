@@ -1,4 +1,4 @@
-import { CustomPromise as Promise } from './custom/promise.js';
+import { CustomPromise as Promise } from '../../lib/custom-promise.js';
 
 export function checkDoubleDigits(number) {
   return new Promise((resolve, reject) => {
