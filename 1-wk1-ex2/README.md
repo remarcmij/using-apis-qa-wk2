@@ -24,8 +24,6 @@ Expected a double digit number but got 100
 
 We can use Github Copilot to help us understand why this happens. The prompt that was given to Copilot and the response it generated is shown below.
 
-
-
 ## Prompt
 
 When I run file#1-ex2-checkDoubleDigits.js I get this output:

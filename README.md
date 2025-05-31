@@ -16,6 +16,3 @@
 6. [Fetch/CORS examples](6-cors/README.md)
 7. [Week 3 Project](7-project/README.md)
 8. Go through questions
-
-
-
