@@ -1,6 +1,6 @@
 import { loadPage } from '../util/loadPage.js';
-import { createErrorView } from '../views/errorView.js';
-import { createReposPage } from './reposPage.js';
+import { createErrorView } from '../views/ErrorView.js';
+import { createReposPage } from './ReposPage.js';
 
 export function createErrorPage(state) {
   const onRetry = () => {

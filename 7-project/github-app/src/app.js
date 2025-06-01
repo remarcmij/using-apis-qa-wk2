@@ -1,4 +1,4 @@
-import { createReposPage } from './pages/reposPage.js';
+import { createReposPage } from './pages/ReposPage.js';
 import { loadPage } from './util/loadPage.js';
 
 function loadApp() {

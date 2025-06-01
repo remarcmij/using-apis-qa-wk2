@@ -1,8 +1,8 @@
 import { API_BASE_URL } from '../constants.js';
 import { fetchSlowAndUnreliably } from '../util/fetchData.js';
 import { loadPage } from '../util/loadPage.js';
-import { createReposView } from '../views/reposView.js';
-import { createErrorPage } from './errorPage.js';
+import { createReposView } from '../views/ReposView.js';
+import { createErrorPage } from './ErrorPage.js';
 
 export function createReposPage(state) {
   const onOrganizationChange = (e) => {

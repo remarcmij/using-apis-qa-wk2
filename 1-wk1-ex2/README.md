@@ -28,27 +28,23 @@ We can use Github Copilot to help us understand why this happens. The prompt tha
 
 When I run file#1-ex2-checkDoubleDigits.js I get this output:
 
-```plaintext
-This is a double digit number!
-This is a double digit number!
-Expected a double digit number but got 9
-Expected a double digit number but got 100
-```
+This is a double digit number!  
+This is a double digit number!  
+Expected a double digit number but got 9.  
+Expected a double digit number but got 100.  
 
 I expected this order:
 
-```plaintext
-Expected a double digit number but got 9
-This is a double digit number!
-This is a double digit number!
-Expected a double digit number but got 100
-```
+Expected a double digit number but got 9.  
+This is a double digit number!  
+This is a double digit number!  
+Expected a double digit number but got 100.  
 
 Why is the output order different than expected?
 
 ---
 
-(start of response)
+<< start of response >>
 
 ### What you expected
 
@@ -104,7 +100,7 @@ Resolved promises' `.then()` handlers are queued before rejected promises' `.cat
 
 That’s why you see the two success messages before the error messages.
 
-(end of response)
+<< end of response >>
 
 ---
 

@@ -1,4 +1,4 @@
-import { createRepoListItemView } from './repoListItemView.js';
+import { createRepoListItemView } from './RepoListItemView.js';
 
 export function createReposView(viewProps) {
   const root = document.createElement('div');

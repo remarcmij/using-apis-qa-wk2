@@ -9,14 +9,14 @@ async function fetchData(url) {
 }
 
 function renderData(jsonData) {
-  const root = document.querySelector('#root');
+  const root = document.querySelector('#data');
   const pre = document.createElement('pre');
   root.appendChild(pre);
   pre.textContent = JSON.stringify(jsonData, null, 2);
 }
 
 function renderError(err) {
-  const root = document.querySelector('#root');
+  const root = document.querySelector('#data');
   const h1 = document.createElement('h1');
   h1.textContent = err.message;
   root.appendChild(h1);
@@ -31,4 +31,4 @@ async function getPokemons() {
   }
 }
 
-window.addEventListener('load', getPokemons);
+document.querySelector('#fetch').addEventListener('click', getPokemons);

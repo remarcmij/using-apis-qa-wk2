@@ -28,6 +28,6 @@ new Promise((resolve, reject) => {
 });
 ```
 
-## Instructions
+## Exercises
 
 Starting with `1-async-await.js`, analyze the given code and predict the expected output.
