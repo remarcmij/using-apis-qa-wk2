@@ -82,6 +82,10 @@ Try the HTML file in the `client` folder again by right-clicking on the `index.h
 
 Now, when you click the button in the client, the request should succeed, and you will see the fetched data displayed on the page as raw JSON.
 
+<details>
+<summary>Explanation of the CORS headers</summary>
+
 If you open the Developer Tools (F12) and select the Network tab as shown in the screenshot below you can that the server response included a response header `Access-Control-Allow-Origin: *`, giving permission to the client to access the server's resources, even though they are on different origins.
 
 !![access-control](../assets/access-control.png)
+</details>
