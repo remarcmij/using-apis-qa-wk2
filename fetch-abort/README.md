@@ -2,11 +2,11 @@
 
 ## Cancelling a Promise
 
-You cannot cancel a Promise itself. A Promise is just a way to be notified when an asynchronous operation finishes (either successfully or with an error). However, Promises do not provide any way to stop or control the underlying operation once it has started.
+You cannot cancel a Promise. A Promise is just a way to be notified when an asynchronous operation finishes (either successfully or with an error). However, Promises do not provide any way to stop or control the underlying operation once it has started.
 
 If you need to be able to cancel an asynchronous operation (like a network request), you must use a separate mechanism—such as an `AbortController` with fetch—to signal cancellation. The Promise will only reflect the result of the operation, not control it.
 
-## Example Explanation
+## Example
 
 The `getPokemons` function in [app.js](week2/fetch-abort/app.js) is an asynchronous JavaScript function designed to
 fetch a list of Pokémon from a remote API. It begins by creating an
