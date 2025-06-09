@@ -44,12 +44,10 @@ export const playlist = [
 ];
 
 export function playVideo({ episode, title, synopsis }, cb) {
-  return new Promise((resolve) => {
-    console.log(`\nPlaying episode ${episode}: ${title}`);
-    console.log(synopsis);
-    setTimeout(() => {
-      console.log(`Finished episode ${episode}`);
-      cb();
-    }, 1000);
-  });
+  console.log(`\nPlaying episode ${episode}: ${title}`);
+  console.log(synopsis);
+  setTimeout(() => {
+    console.log(`Finished episode ${episode}`);
+    cb();
+  }, 1000);
 }

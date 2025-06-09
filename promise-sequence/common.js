@@ -1,5 +1,3 @@
-// import { AsyncPromise as Promise } from '../lib/async-promise.js';
-
 export const playlist = [
   {
     episode: 1,
@@ -47,10 +45,10 @@ export const playlist = [
 
 export function playVideo({ episode, title, synopsis }) {
   return new Promise((resolve) => {
-    console.log(`\nplaying episode ${episode}: ${title}`);
-    console.log(`synopsis: ${synopsis}`);
+    console.log(`\nPlaying episode ${episode}: ${title}`);
+    console.log(synopsis);
     setTimeout(() => {
-      console.log(`finished episode ${episode}`);
+      console.log(`Finished episode ${episode}`);
       resolve();
     }, 1000);
   });
