@@ -22,5 +22,5 @@
 ## Bonus Content
 
 8. [Promise Sequencing](8-promise-sequence/README.md)
-9. [Aborting a fetch](10-fetch-abort/README.md)
-10. [Comparing fetch, XMLHttpRequest and axios](11-fetch-xml-axios/README.md)
+9. [Aborting a fetch](9-fetch-abort/README.md)
+10. [Comparing fetch, XMLHttpRequest and axios](10-fetch-xml-axios/README.md)
