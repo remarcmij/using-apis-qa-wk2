@@ -1,4 +1,4 @@
-# fetch-abort
+# Aborting a Fetch Request with Promises
 
 ## Cancelling a Promise
 

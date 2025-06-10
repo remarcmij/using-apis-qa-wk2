@@ -16,4 +16,11 @@
 6. [Fetch/CORS examples](6-cors/README.md)
 7. UsingAPIs Week 3 [Project](https://github.com/HackYourFuture/UsingAPIs/tree/main/Week3)
       - [GitHub Example App](7-project/github-app/README.md)
-8. Go through questions
+
+(Go through questions)
+
+## Bonus Content
+
+8. [Promise Sequencing](8-promise-sequence/README.md)
+9. [Aborting a fetch](10-fetch-abort/README.md)
+10. [Comparing fetch, XMLHttpRequest and axios](11-fetch-xml-axios/README.md)
