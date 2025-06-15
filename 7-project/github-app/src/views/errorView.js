@@ -7,7 +7,7 @@ export function createErrorView(viewProps) {
   const root = document.createElement('div');
   root.className = 'dialog-container whiteframe';
   root.innerHTML = String.raw`
-    <h4>Oops... Something went wrong</h4>
+    <h4>Unable to load data</h4>
     <div>
       ${viewProps.error?.message || 'Unknown error'}
     </div>
