@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- add support for loading indicator -->
+    <style>
+      .loading-indicator {
+        position: fixed;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+    <!-- end loading indicator -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button type="button" id="button">Get Data</button>
+      <input type="checkbox" id="option" name="option" />
+      <label for="option">Use invalid URL</label>
+    </div>
+
+    <div class="loading-indicator hide">Loading...</div>
+
+    <div id="container">
+      <pre id="json"></pre>
+      <div id="error"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

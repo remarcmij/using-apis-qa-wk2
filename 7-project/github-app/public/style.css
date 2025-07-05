@@ -279,29 +279,6 @@ From: https://code-boxx.com/rotate-spin-image-html-css/#sec-animate
   transform: translate(-50%, -50%);
 }
 
-/*
-From: https://code-boxx.com/rotate-spin-image-html-css/#sec-animate 
-*/
-@keyframes spinning {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.spin {
-  animation-name: spinning;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.content-container {
-  margin: 4px 0;
-  padding: 16px;
-}
-
 .floating-button {
   position: fixed;
   width: 60px;

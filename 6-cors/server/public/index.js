@@ -8,6 +8,20 @@ async function fetchData(url) {
   return response.json();
 }
 
+async function putData(url, data) {
+  const response = await fetch(url, {
+    method: 'PUT',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  if (!response.ok) {
+    throw new Error(`HTTP Error ${response.status} - ${response.statusText}`);
+  }
+  return response.json();
+}
+
 function renderData(jsonData) {
   const root = document.querySelector('#data');
   const pre = document.createElement('pre');
@@ -32,3 +46,6 @@ async function getPokemons() {
 }
 
 document.querySelector('#fetch').addEventListener('click', getPokemons);
+document
+  .querySelector('#put')
+  .addEventListener('click', () => putData(EXAMPLE_API, { msg: 'hello' }));
