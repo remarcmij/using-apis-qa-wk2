@@ -6,3 +6,8 @@ async function sleepy() {
 const result = sleepy();
 console.log(result);
 console.log(await result);
+
+/* 
+This snippet is executed instantly, and the await keyword is ignored. Does it 
+happen because the return statement has precedence over the delayed action?
+*/

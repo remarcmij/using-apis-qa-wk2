@@ -11,6 +11,8 @@ async function fetchData(url) {
   }
 }
 
+/* Does this code yield the same results in every scenario? */
+
 function fetchData2(url) {
   return new Promise((resolve, reject) => {
     fetch(url)
