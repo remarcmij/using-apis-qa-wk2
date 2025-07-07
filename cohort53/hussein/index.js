@@ -9,7 +9,9 @@ async function get3Pokemon() {
     const prom3 = fetch('https://pokeapi.co/api/v2/pokemon/3').then((res) =>
       res.json()
     );
-    const results = await Promise.all([prom1, prom2, prom3]);
+
+    // const results = await Promise.all([prom1, prom2, prom3]);
+    const results = await Promise.allSettled([prom1, prom2, prom3]);
     printPokemon(results);
   } catch (error) {
     console.error('Error fetching Pokémon:', error);
@@ -17,8 +19,9 @@ async function get3Pokemon() {
 }
 
 function printPokemon(results) {
+  console.log(results);
   for (let pokemon of results) {
-    console.log(pokemon.name);
+    console.log(pokemon.value?.name);
   }
 }
 

@@ -1,0 +1,29 @@
+Prompt: If a server sets Access-Control-Allow-Origin: *, what are the risks? Are there situations where that is safe or unsafe?
+
+-----
+
+Setting Access-Control-Allow-Origin: * means any origin can access your resource via cross-origin requests. This has both safe and unsafe implications depending on the context.
+
+⸻
+
+✅ When it is safe:
+	•	Public APIs or assets: If the data is not sensitive (e.g. a public image CDN or weather API), allowing all origins is fine.
+	•	Static resources: When the resource is meant to be embedded or consumed freely.
+	•	No credentials involved: As per the CORS spec, Access-Control-Allow-Origin: * cannot be used with Access-Control-Allow-Credentials: true.
+
+⸻
+
+⚠️ When it is unsafe:
+	•	Sensitive data: If your endpoint returns user-specific or protected data, * allows malicious websites to fetch it via a user’s browser.
+	•	Combining with credentials: If your API relies on cookies or Authorization headers, using * creates a serious risk (though the browser will block this by spec).
+	•	CSRF-like risks: Even without credentials, APIs that mutate state (e.g. POST, DELETE) can be abused unless carefully restricted.
+
+⸻
+
+🔒 Best practice:
+
+Use Access-Control-Allow-Origin: https://your-client.com instead of * for private APIs. This limits access to trusted origins.
+
+⸻
+
+Let me know if you want an example with credentials or a policy configuration.

@@ -1,0 +1,36 @@
+Prompt: When using JavaScript to make a fetch request in a browser, what is the difference between a simple request and a preflight request in CORS? And why is the OPTIONS method used in preflight?
+
+-----
+
+In CORS, when you make a fetch() request from the browser, the browser determines whether it’s a simple request or needs a preflight request.
+
+🔹 Simple Request
+
+A simple request meets all these conditions:
+	•	Uses one of these methods: GET, HEAD, or POST
+	•	Has only CORS-safelisted headers (e.g., Accept, Content-Type with value application/x-www-form-urlencoded, multipart/form-data, or text/plain)
+	•	Does not use credentials: include unless the server supports it
+
+If these are satisfied, the browser sends the request directly without any CORS negotiation.
+
+🔹 Preflight Request
+
+If any condition for a simple request is not met (e.g., method is PUT, custom headers are used, or non-safelisted Content-Type), the browser first sends a preflight request:
+	•	Uses the OPTIONS method
+	•	Includes headers like:
+	•	Access-Control-Request-Method
+	•	Access-Control-Request-Headers
+	•	Origin
+
+This is a safety check asking the server: “Are you OK with me sending this kind of request?”
+
+🔸 Why OPTIONS?
+
+The OPTIONS method is used because it’s designed to ask the server what methods and headers are supported—without triggering the actual resource operation (e.g., modifying data). It’s safe and side-effect free.
+
+⸻
+
+Summary:
+	•	Simple = safe & allowed directly.
+	•	Preflight = more complex, needs permission.
+	•	OPTIONS = browser’s way of asking permission before sending the real request.

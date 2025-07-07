@@ -1,0 +1,8 @@
+Q7: May you create an example using ONLY the async-await syntax, without using the class keyword Promise, and the same example, using Promise.then syntax?
+
+An async function by itself can only create immediately settled promises (either resolved or rejected). If you want a promise that
+is settled some time later you either need to create a promise
+yourself (e.g. with new Promise()) or call a function such as
+fetch() that returns a promise.
+
+See also q3.js

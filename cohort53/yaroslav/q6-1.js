@@ -31,3 +31,15 @@ function fetchData2(url) {
       });
   });
 }
+
+const result1 = await fetchData('https://pokeapi.co/api/v2/pokemon/?limit=5');
+console.log('result1', result1);
+
+const result2 = await fetchData2('https://pokeapi.co/api/v2/pokemon/?limit=5');
+console.log('result2', result2);
+
+/* Analysis:
+Wrapping the promise from fetch() in a new promise is completely unnecessary.
+It does not add anything useful.
+So your first (simpler) version is preferred.
+*/
