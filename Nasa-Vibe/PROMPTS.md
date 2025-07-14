@@ -145,6 +145,7 @@ Perfect! I have successfully created a comprehensive NASA Near Earth Objects Exp
 
 ### 📁 **Project Structure:**
 
+```plaintext
 Nasa-Vibe/
 ├── index.html
 ├── .gitignore
@@ -166,6 +167,7 @@ Nasa-Vibe/
         ├── fetchData.js
         ├── formatters.js
         └── loadPage.js
+```
 
 ### 🚀 **Ready to Run:**
 
